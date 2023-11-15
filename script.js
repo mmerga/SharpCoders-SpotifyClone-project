@@ -9,10 +9,10 @@ function doubtClicked(event){
 
     const div =  document.getElementById(eventId)
     if(div.children[1].dataset.isOpen === 'false'){
-        div.children[1].innerHTML = '<i data-id="doubt-1" class="fa-solid fa-chevron-down"></i>'
+        div.children[1].innerHTML = `<i data-id=${eventId} class="fa-solid fa-chevron-down"></i>`
         div.children[1].dataset.isOpen = 'true'
     }else{
-        div.children[1].innerHTML = '<i class="fa-solid fa-chevron-up"></i>'
+        div.children[1].innerHTML = `<i data-id=${eventId} class="fa-solid fa-chevron-up"></i>`
         div.children[1].dataset.isOpen = 'false'
     }
 }
