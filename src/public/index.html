@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Júlio Hebert Silva">
+    
+    <meta name="description" content="Spotify Clone for study purposes, SharpCoders Bootcamp. All layout rights belong to Spotify" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Spotify Clone</title>
+</head>
+<body>
+    <header>
+        <navbar id="navbar">
+            <div class="navbar-left">
+                <a href="https://www.spotify.com/" target="_blank" rel="noopener noreferrer">
+                    <figure>
+                        <img src="../assets/images/logo.png" alt="Spotify Logo" title="Spotify" width="300">
+                    </figure>
+                </a>
+                </div>
+            <div class="navbar-rigth">
+                <ul>
+                    <li>
+                        <a href="#">Premium</a>
+                    </li>
+                    <li>
+                        <a href="#">Suporte</a>
+                    </li>
+                    <li>
+                        <a href="#">Baixar</a>
+                    </li>
+                    <li>
+                        <a href="#">Inscrever-se</a>
+                    </li>
+                    <li>
+                        <a href="#">Entrar</a>
+                    </li>
+                </ul>
+            </div>
+        </navbar>
+    </header>
+    <main id="main">
+        <div class="main-inner-container">
+            <section class="hear">
+                <div class="hear-left">
+                    <div class="phone-container">
+                        <div class="phone-container-stick"></div>
+                        <div class="phone-container-img">
+                            <img src="../assets/images/phone.png" alt="Phone">
+                        </div>
+                    </div>
+                </div>
+                <div class="hear-rigth">
+                    <h1>
+                        Escute milhões de músicas e podcasts de graça.
+                    </h1>
+                    <button class="btn"><a href="https://www.spotify.com/" target="_blank" rel="noopener noreferrer">Baixe o Spofity Free</a></button>
+                </div>
+            </section>
+        </div>
+        <div class="main-inner-container">
+            <section class="choose">
+                <div class="choose-inner">
+
+                    <h2>Por que escolher o Spotify?</h2>
+                    <ul>
+                        <li>
+                            <img src="../assets/images/play.png" alt="">
+                            <p >Ouça suas favoritas.</p>
+                            <p>Ouça suas músicas prediletas e descubra novas músicas e podcasts.</p>
+                        </li>
+                        <li>
+                            <img src="../assets/images/playlist.png" alt="">
+                            <p >Playlists mais fáceis de usar.</p>
+                            <p>Vamos te ajudar a criar playlists. Ou você pode curtir playlists criadas por especialistas em música.</p>
+                        </li>
+                        <li>
+                            <img src="../assets/images/hart.png" alt="">
+                            <p >Do jeitinho que você gosta.</p>
+                            <p>Conte pra gente o que você gosta de ouvir, e nós vamos recomendar músicas para você.</p>
+                        </li>
+                        <li>
+                            <img src="../assets/images/energy.png" alt="">
+                            <p >Economize seu pacote de dados.</p>
+                            <p>Para consumir menos dados ao ouvir música, ative a Economia de dados em Configurações.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="main-inner-container">
+            <section class="free">
+                <div class="free-inner">
+                    <h2>É grátis.</h2>
+                    <h2>Não precisa de cartão de crédito.</h2>
+                </div>
+            </section>
+        </div>
+        <div class="main-inner-container">
+            <section class="doubt">
+                <h2 class="doubt-h2">Alguma dúvida?</h2>
+
+                <div class="doubt-item" data-id="doubt-1" id="doubt-1">
+                    <p data-id="doubt-1">Como faço para criar uma playlist?</p>
+                    <span data-isOpen="false"><i data-id="doubt-1" class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="hidden doubt-info" id="doubt-1-1">
+                    <p>As playlists são uma ótima maneira de criar coleções de músicas, seja para só você ouvir ou para compartilhar.</p>
+                    <p>Para criar uma:</p>
+                    <ol>
+                        <li>Clique na “Sua Biblioteca”.</li>
+                        <li>Clique em <span>CRIAR.</span></li>
+                        <li>Dê um nome para a playlist.</li>
+                        <li>Comece a incluir algumas músicas (enquanto recomendamos outras).</li>
+                    </ol>
+                </div>
+
+                <div class="doubt-item" data-id="doubt-2" id="doubt-2">
+                    <p data-id="doubt-2">Como faço para ativar o modo de Economia de dados?</p>
+                    <span data-isOpen="false"><i data-id="doubt-2" class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="hidden doubt-info" id="doubt-2-2">
+                    <ol>
+                        <li>Clique em <span>Início.</span></li>
+                        <li>Clique em <span>Configurações.</span></li>
+                        <li>Clique em <span>Economia de dados.</span></li>
+                        <li>Ative a “Economia de dados”.</li>
+                    </ol>
+                </div>
+
+                <div class="doubt-item" data-id="doubt-3" id="doubt-3">
+                    <p data-id="doubt-3">Só é possível ouvir música em ordem aleatória?</p>
+                    <span data-isOpen="false"><i data-id="doubt-3" class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="hidden doubt-info" id="doubt-3-3">
+                    <p>As playlists com o ícone de ordem aleatória tocam dessa forma.</p>
+                    <p>Nas playlists que não têm esse ícone, você pode clicar em qualquer música para ouvir.</p>
+                </div>
+
+                <div class="doubt-item" data-id="doubt-4" id="doubt-4">
+                    <p data-id="doubt-4">Onde posso encontrar podcasts?</p>
+                    <span data-isOpen="false"><i data-id="doubt-4" class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="hidden doubt-info" id="doubt-4-4">
+                    <p>Clique em <span>Buscar.</span> Em <span>Navegar por todas as seções,</span> clique em Podcasts.</p>
+                </div>
+
+            </section>
+        </div>
+        <div class="main-inner-container">
+            <section class="liked">
+                <div class="liked-inner">
+                    <h2>Gostou? Então aperte o play.</h2>
+                    <button class="btn"><a href="https://www.spotify.com/" target="_blank" rel="noopener noreferrer">Baixe o Spofity Free</a></button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer id="footer">
+        <section class="footer-top">
+            <div class="footer-top-left">
+                <div class="footer-top-left-item">
+                    <figure>
+                        <img src="../assets/images/logo.png" alt="Spotify Logo" title="Spotify" width="300">
+                    </figure>
+                </div>
+                <div class="footer-top-left-item">
+                    <ul>
+                        <li>Empresa</li>
+                        <li>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Empregos</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" rel="noopener noreferrer">For the Record</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top-left-item">
+                    <ul>
+                        <li>Comunidades</li>
+                        <li>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Para Artistas</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Desenvolvedores</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Publicidade</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Investidores</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Fornecedores</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top-left-item">
+                    <ul>
+                        <li>Links Úteis</li>
+                        <li>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Suporte</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Player da Web</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Aplicativo móvel grátis</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-top-right">
+                <ul>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer-bot">
+            <div class="footer-bot-left">
+                <ul>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Legal</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Centro de Privacidade</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Política de privacidade</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Cookies</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Sobre anúncios</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Acessibilidade</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-bot-right">
+                <figure>
+                    <img src="../assets/images/brazil.png" alt="Brazil" width="50px">
+                    <span>Brasil (Português)</span>
+                </figure>
+                <p>&copy 2023 Spotify AB</p>
+            </div>
+        </section>
+    </footer>
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
