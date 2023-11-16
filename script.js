@@ -24,6 +24,29 @@ function doubt(){
     }
 }
 
+function handleMenuOpen(event){
+    const menu = document.getElementById('menu')
+    menu.classList.remove('fade-out-right')
+    menu.classList.add('navbar-open')
+}
+
+function handleMenuClose(event){
+    const menu = document.getElementById('menu')
+    menu.classList.add('fade-out-right')
+    setTimeout(()=>{
+        menu.classList.remove('navbar-open')
+    },
+    500)
+}
+
+function menu(){
+    const menuOpen = document.getElementById('menu-open')
+    const menuClose = document.getElementById('menu-close')
+    menuOpen.addEventListener('click', handleMenuOpen)
+    menuClose.addEventListener('click', handleMenuClose)
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     doubt();
+    menu();
 });
